@@ -169,6 +169,10 @@ main {
 }
 }
 
+#reasons {
+    font-family: 'Oswald';
+}
+
 /*Media query for laptops and upwards (992px and higher)*/
 @media screen and (min-width:992px ) {
    #menu a:hover {
