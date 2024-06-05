@@ -265,10 +265,10 @@ hr {
     }
 
     #benefits-mental > div {
-        align-items: start;
+        align-items: flex-start;
     }
 
     #benefits-physical > div {
-        align-items: end;
+        align-items: flex-end;
     }
 }
