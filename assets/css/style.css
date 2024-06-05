@@ -112,6 +112,7 @@ main {
 #cover-text > h2, #cover-text > h3 {
     color:#ffffff;
 }
+
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -167,6 +168,24 @@ main {
     width: 300px;
     right: 50px;
 }
+
+/*Reasons section*/
+#benefits-physical,
+#benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    width: 75%;
+}
+
+#benefits-mental > div {
+    text-align: end;
+    align-self: flex-end ;
+}
 }
 
 #reasons {
@@ -204,6 +223,7 @@ hr {
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
+    /*Makes the square image into a circle*/
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
@@ -221,6 +241,34 @@ hr {
     }
 }
 
-footer {
-    display: ;
+/*Media query for computers,large laptops and upwards (1200px and higher)*/
+@media screen and (min-width:1200px) {
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits > div {
+        flex: 1;
+    }
+    
+    #benefits-mental {
+    order: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order:3;
+    }
+
+    #benefits-mental > div {
+        align-items: start;
+    }
+
+    #benefits-physical > div {
+        align-items: end;
+    }
 }
